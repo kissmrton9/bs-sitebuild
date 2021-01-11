@@ -1,0 +1,237 @@
+@font-face{
+    font-family: "Catamaran";
+    src: url("/fonts/catamaran/Catamaran-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url("/fonts/lato/Lato-Regular.ttf") format('Lato');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Mulish";
+    src: url("fonts/mulish/Mulish-Regular.ttf") format('Mulish');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --myyellow: #fdcc52;
+    --downloads: #fdc844;
+    --contacts: #fdc947;
+    --myred: #dc2430;
+    --mypink: #7b4397;
+    --mygrey: #dfc4d7;
+    --menuBorder: #e1e1e1;
+}
+.topMenu,#firstSect{
+    background: url("img/bg-pattern.png"),linear-gradient(90deg,var(--myred),var(--mypink));
+}
+#downloads{
+    background-color: var(--downloads);
+}
+#contacts{
+    background-color: var(--contacts);
+}
+#mainMenu{
+    padding-left: 50%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+[class^="col"]{
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.topMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 99;
+    font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+
+.topRightMenu{
+    border: 1px solid var(--menuBorder);
+    padding: 0.2rem 1rem;
+    border-radius: 0.2rem;
+}
+.scrolled {
+    background: white;
+}
+.myyellow{
+    color: var(--myyellow);
+}
+.mygrey{
+    color: var(--mygrey);
+}
+.myyellow:hover, .mygrey:hover{
+    color: white;
+}
+button.white{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.white{
+    color: white;
+}
+.white:hover{
+    background-color: var(--myyellow);
+    transition: 300ms;
+}
+img[src="img/phone.png"]{
+    width: 60%;
+}
+img[src="img/google-play-badge.svg"]{
+    width: 135px;
+    height: 40px;
+}
+img[src="img/app-store-badge.svg"]{
+    width: 100%;
+}
+.img-over {
+    width: 54%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+}
+p.r2{
+    font-size: 2rem;
+    font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+p.r3{
+    font-size: 3rem;
+    font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+p.fSp{
+    padding-top: 2rem;
+    color:white;
+    font-size: 2rem;
+    font-family: "Mulish", Helvetica, Arial, sans-serif;
+}
+p.small{
+    font-family: "Mulish", Helvetica, Arial, sans-serif;
+}
+@media all and (min-width: 992px) {
+    .col-lg-0{
+        max-width: 0px;
+        padding: 0;
+    }
+}
+
+h1{
+    font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+
+section.stopWaiting{
+    position: relative;
+}
+
+section.stopWaiting>div.text{
+    position: absolute;
+    top:50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+section.stopWaiting>div.img-cover{
+    height: 640px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    opacity: 1;
+    background: url("/img/bg-cta.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-width : 992px){
+    section.stopWaiting>div.img-cover{
+        background-size: 100% auto;
+    }
+}
+
+section.stopWaiting>img{
+    filter: grayscale(50%);
+    z-index: -1;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+button.stopWaiting{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    color:white;
+    width:15rem;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+button.stopWaiting:hover{
+    background-color: #fdcc52;
+    border: #fdcc52;
+    transition: 300ms;
+}
+
+.new-friends{
+    background-color: rgb(253, 202, 74);
+}
+.heart{
+    color: #dd4c39;
+}	
+
+.fa-twitter{
+    background-color:rgba(29, 161, 243, 0.9);
+}
+
+.fa-facebook-f{
+    background-color:rgba(59, 89, 153, 0.9);
+}
+
+.fa-google-plus-g{
+    background-color:rgba(221, 76, 57,0.9);
+}
+
+.fa-twitter:hover {
+    background-color:rgba(29, 161, 243);
+}
+
+.fa-facebook-f:hover{
+    background-color:rgba(59, 89, 153);
+}
+
+.fa-google-plus-g:hover{
+    background-color:rgb(221, 76, 57);
+}
+
+.footer{
+    color:rgb(94, 94, 94);
+    font-family: "Mulish", Helvetica, Arial, sans-serif;
+}
+
+.footerlink{
+    color:rgb(94, 94, 94);
+}
+
+.footerlink:hover{
+    color:#fdcc52;
+}
